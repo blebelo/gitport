@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Benny Lebelo - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <!--Navigation Bar-->
             <h1>Benny Lebelo</h1>
+            <!--Navigation Bar-->
             <nav>
                 <ul>
                     <li><a href="#nav">Home</a></li>
@@ -33,22 +34,22 @@
                     <li>JavaScript</li>
                 </ul>
             </div>
-            <div class="projects">
+            <section class="projects">
                 <h2>Projects</h2>
-                <section class="blog">
+                <div class="blog">
                     <h3>Personal Blog</h3>
                     <p>A personal portfolio showcasing my web development projects.</p>
                     <a href="https://github.com/blebelo/gitport">View Project</a>
-                </section>
-                <section class="portfolio">
+                </div>
+                <div class="portfolio">
                     <h3>Portfolio Site</h3>
                     <p>A personal portfolio showcasing my web development projects.</p>
                     <a href="https://github.com/blebelo/gitport">View Project</a>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
         <footer>
-            <div class="contact">
+            <section class="contact">
                 <h2>Contact Me</h2>
                 <form action="./portfolio.html" method="POST">
 
@@ -63,14 +64,14 @@
                     <label for="messages">Message</label>
                     <textarea id="messages" name="messages" placeholder="Your message"></textarea>
                     <br>
-
                 </form>
-            </div>
+            
             <input type="submit" value="Submit">
-            <section class="Contact">
-                <a href="github.com/blebelo">Github</a>
-                <a href="linkedin.com/in/mblebelo">LinkedIn</a>
-                <a href="twitter.com">Twitter</a><br>
+                <div class ="socials">
+                    <a href="github.com/blebelo">Github</a>
+                    <a href="linkedin.com/in/mblebelo">LinkedIn</a>
+                    <a href="twitter.com">Twitter</a><br>
+                </div>
             </section>
             <p>© 2024 Benny Lebelo. All rights reserved.</p>
         </footer>
