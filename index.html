@@ -6,73 +6,93 @@
     </head>
     <body>
         <header>
-            <h1>Benny Lebelo</h1>
-            <!--Navigation Bar-->
-            <nav>
-                <ul>
-                    <li><a href="#nav">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-bar">
+                <h1>Benny Lebelo</h1>
+                <!--Navigation Bar-->
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <img src="https://avatars.githubusercontent.com/u/148818879?s=400&u=c0f3db9ffbeb22a9ac54e5747f6babf21f4a9458&v=4" alt="Selfie of Benny"/>
+            <section id="about">
+                <div>
+                    <img src="https://avatars.githubusercontent.com/u/148818879?s=400&u=c0f3db9ffbeb22a9ac54e5747f6babf21f4a9458&v=4" alt="Selfie of Benny"/>
+                </div>
+                <article>
+                    <h2>About Me</h2>
+                    <p>Web developer with expertise in HTML, CSS, and JavaScript. Passionate about solving problems and creating intuitive UI.</p>
+                </article>
+            </section>
 
-            <div class="about">
-                <h2>About Me</h2>
-                <p>Web developer with expertise in HTML, CSS, and JavaScript. Passionate about solving problems and creating intuitive UI.</p>
-            </div>
-
-            <div class="skills">
+            <section id="skills">
                 <h2>Skills</h2>
                 <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                    <li>Java</li>
+                    <li>Canva</li>
                 </ul>
-            </div>
-            <section class="projects">
+            </section>
+
+            <section id="projects">
                 <h2>Projects</h2>
-                <div class="blog">
-                    <h3>Personal Blog</h3>
-                    <p>A personal portfolio showcasing my web development projects.</p>
-                    <a href="https://github.com/blebelo/gitport">View Project</a>
-                </div>
-                <div class="portfolio">
-                    <h3>Portfolio Site</h3>
-                    <p>A personal portfolio showcasing my web development projects.</p>
-                    <a href="https://github.com/blebelo/gitport">View Project</a>
+                <div>
+                    <article>
+                        <h3>Personal Blog</h3>
+                        <p>A personal where I share my personal development and ideas.</p>
+                        <a href="https://github.com/blebelo/gitport">View Project</a>
+                    </article>
+                    <article>
+                        <h3>Portfolio Site</h3>
+                        <p>A personal portfolio showcasing my web development projects.</p>
+                        <a href="https://github.com/blebelo/gitport">View Project</a>
+                    </article>
+                    <article>
+                        <h3>Waste Sorting API</h3>
+                        <p>A web API that aids recycling by through giving tips and guidlines.</p>
+                        <a href="https://github.com/blebelo/gitport">View Project</a>
+                    </article>
                 </div>
             </section>
-        </main>
-        <footer>
-            <section class="contact">
+
+            <section id="contact">
                 <h2>Contact Me</h2>
-                <form action="./portfolio.html" method="POST">
+                <form action="./submit- form" method="POST">
+                    <div>
+                        <label for="text">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required></textarea>
+                    </div>
 
-                    <label for="text">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name"></textarea>
-                    <br>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your.email@example.com"></textarea>
-                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required></textarea>
+                    </div>
                     
-                    <label for="messages">Message</label>
-                    <textarea id="messages" name="messages" placeholder="Your message"></textarea>
-                    <br>
+                    <div>
+                        <label for="messages">Message</label>
+                        <textarea id="messages" name="messages" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+
                 </form>
-            
-            <input type="submit" value="Submit">
+            </section>
+        </main>
+        <footer>            
                 <div class ="socials">
                     <a href="github.com/blebelo">Github</a>
                     <a href="linkedin.com/in/mblebelo">LinkedIn</a>
                     <a href="twitter.com">Twitter</a><br>
                 </div>
-            </section>
             <p>© 2024 Benny Lebelo. All rights reserved.</p>
         </footer>
     </body>
